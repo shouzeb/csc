@@ -1,0 +1,18 @@
+<label>Choose a country:</label>
+
+<select (change)="onCountrySelect($event.target.value)">
+  <option value="" disabled selected>Select Country</option>
+  <option *ngFor="let country of countries">{{country.name}}</option>
+</select>
+
+<label >Choose a state:</label>
+<select  (change)="onStateSelect($event.target.value)">
+  <option value="" disabled selected>Select Country</option>
+  <option *ngFor="let state of states">{{state.name}}</option>
+</select>
+
+<label >Choose a city:</label>
+<select (change)="onCitySelect($event.target.value)">
+  <option value="" disabled selected>Select Country</option>
+  <option *ngFor="let city of cities">{{city.name}}</option>
+</select>

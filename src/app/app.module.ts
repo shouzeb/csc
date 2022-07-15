@@ -1,16 +1,21 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CSCComponent } from './MyComponents/csc/csc.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CSCComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule 
+
   ],
   providers: [],
   bootstrap: [AppComponent]
